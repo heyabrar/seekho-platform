@@ -518,7 +518,7 @@ body {
   .benefitsContainer > p {
     font-size: 16px;
     font-weight: 700;
-    width: 40%;
+    width: 45%;
     padding: 7px 17px 7px 17px;
   }
 
@@ -538,12 +538,12 @@ body {
 
   .benefitsCard > :nth-child(2) > :nth-child(1) {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .benefitsCard > :nth-child(2) > :nth-child(2) {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: -10px;
   }
 
