@@ -7,6 +7,7 @@ const ThousandsSeries = () => {
                 viewBox="0 0 116 84"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="heroSVG"
             >
                 <rect
                     width="115"

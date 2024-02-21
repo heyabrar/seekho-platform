@@ -35,7 +35,6 @@ function App() {
 
   return (
     <div className="heroImage">
-      {/* <img src={HeroBg} alt="HeroBG" className="heroBG" /> */}
       <Container>
         <HeroSection />
       </Container>

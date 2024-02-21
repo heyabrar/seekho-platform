@@ -7,6 +7,7 @@ const UnlimitedContent = () => {
                 viewBox="0 0 116 85"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                className="heroSVG"
             >
                 <rect
                     x="0.667053"
