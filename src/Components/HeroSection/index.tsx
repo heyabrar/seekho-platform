@@ -11,7 +11,7 @@ const HeroSection = () => {
                 <UnlimitedContent />
             </div>
 
-            <p style={{ textAlign: "center", fontWeight: 700 }} className="heroText">
+            <p style={{ textAlign: "center", fontWeight: 700, }} className="heroText">
                 1 SAAL KE LIE UNLOCK KAREIN
             </p>
         </div>

@@ -4,78 +4,202 @@ body {
 }
 
 .container {
-  max-width: 1248px;
+  /* max-width: 1248px; */
   margin-right: auto;
   margin-left: auto;
-  padding-right: 20px; 
-  padding-left: 20px; 
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
+/* Hero section CSS */
 .heroImage {
   background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.52), black),
     url("/src/assets/heroBG.png");
   height: 300px;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   background-color: black;
   width: 100%;
 }
 
 .heroMain {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin-top: 20%;
+  padding-top: 10%;
+}
+
+.heroText {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Plan details CSS */
+.planCard {
+  position: relative;
+  background-color: #292a2f;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  margin-top: 10px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.discountTag {
+  background: #3980ff;
+  color: white;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 11px;
+  border-radius: 10px;
+}
+
+.radioButton {
+  width: 20px;
+  height: 20px;
+}
+
+.specialPriceTag {
+  position: absolute;
+  background-image: linear-gradient(to right, #0075ff, #ff00d6, #ffa800);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 11px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  right: 0;
+  font-size: 10px;
 }
 
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
-  .heroText{
+  /* Hero section CSS */
+  .heroText {
     font-size: 20px;
   }
 
-  .planCard{
-    display: flex;
-    justify-content: space-between;
+  /* Plan details CSS */
+  .planCard {
     padding-top: 18px;
-    padding-right: 14px;
+    padding-right: 15px;
     padding-bottom: 10px;
-    padding-left: 14px;
-    margin-top: 10px;
-    border-radius: 10px;
-    align-items: center;
-    background-color: #292A2F;
+    padding-left: 15px;
+  }
+
+  .planCard > div > div > p > :nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .planCard > div > div > p > :nth-child(2) {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .planCard > div > div > :nth-child(2) {
+    font-size: 11px;
+    margin-top: -5px;
+  }
+
+  .radioButton {
+    width: 15px;
+    height: 15px;
+  }
+
+  .specialPriceTag {
+    top: -11px;
   }
 }
 
 /* Medium Devices (Tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Hero section CSS */
   .heroSVG {
     width: 140px;
     height: 140px;
   }
 
-  .heroText{
+  .heroText {
     font-size: 22px;
+  }
+
+  /* Plan details CSS */
+  .plansContainer {
+    width: 60%;
+    margin: auto;
+  }
+
+  .planCard {
+    padding: 15px;
+  }
+
+  .specialPriceTag {
+    top: -10px;
   }
 }
 
 /* Extra Large Devices (Large Desktops) */
 @media only screen and (min-width: 1200px) {
+  /* Hero section CSS */
   .heroSVG {
     width: 200px;
     height: 200px;
   }
 
-  .heroImage{
+  .heroImage {
     height: 500px;
   }
 
-  .heroText{
+  .heroText {
     font-size: 36px;
   }
 
-  .container{
+  .container {
     margin-right: auto;
     margin-left: auto;
+  }
+
+  /* Plan details CSS */
+  .plansContainer {
+    width: 40%;
+    margin: auto;
+  }
+
+  .planCard {
+    padding-top: 18px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+
+  .planCard > div > div > p > :nth-child(1) {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .planCard > div > div > p > :nth-child(2) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .planCard > div > div > :nth-child(2) {
+    margin-top: "-10px";
+    color: #7d7d7d;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .planCard > :nth-child(2) {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  .specialPriceTag {
+    font-size: 14px;
+    top: -14px;
   }
 }
