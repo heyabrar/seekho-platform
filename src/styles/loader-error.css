@@ -1,0 +1,45 @@
+.loader-error-overlay{
+  display: flex;
+  flex-direction: column;
+  column-gap: 40px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  opacity: 90%;
+}
+
+.loader {
+  border: 8px solid #18a9f2;
+  background-image: linear-gradient(to right, #0075ff, #ff00d6, #ffa800);
+  border-top: 8px solid #050505;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hide loader when body has a class of 'loaded' */
+body.loaded .loader-overlay {
+  display: none;
+}
+
+.loading-error-text {
+  font-size: 18px;
+  margin-top: 30px;
+  font-family: "Roboto", sans-serif;
+}
