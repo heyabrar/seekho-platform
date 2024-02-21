@@ -131,6 +131,54 @@ body {
   cursor: pointer;
 }
 
+/* Benefits section CSS */
+.benefitsContainer {
+  border: 1px solid gray;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+
+.benefitsContainer > p {
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 5px 17px 5px 17px;
+}
+
+.benefitsContainer > :nth-child(2) {
+  margin-top: 20px;
+}
+
+.benefitsCard {
+  padding: 0px 20px 0px 30px;
+  display: flex;
+  align-content: first baseline;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.benefitsCard > div > img {
+  width: 34px;
+  height: 34px;
+  margin-top: 15px;
+}
+
+.benefitsCard > :nth-child(2) > :nth-child(1) {
+  font-weight: 500;
+}
+
+.benefitsCard > :nth-child(2) > :nth-child(2) {
+  font-weight: 400;
+  color: gray;
+  margin-top: -10px;
+}
+
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
   /* Hero section CSS */
@@ -246,6 +294,7 @@ body {
 
   .discountCard {
     padding: 20px;
+    border-radius: 20px;
   }
 
   .discountCard > div > div > p {
@@ -267,6 +316,13 @@ body {
     width: 55%;
     margin: auto;
     margin-top: 30px;
+  }
+
+  /* Benefits section CSS */
+  .benefitsContainer {
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
   }
 }
 
@@ -393,5 +449,44 @@ body {
 
   .arrowForward {
     font-size: 24px;
+  }
+
+  /* Benefits section CSS */
+  .benefitsContainer {
+    width: 29%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .benefitsContainer > p {
+    font-size: 16px;
+    font-weight: 700;
+    width: 40%;
+    padding: 7px 17px 7px 17px;
+  }
+
+  .benefitsCard {
+    padding: 0px 20px 0px 30px;
+    display: flex;
+    align-content: first baseline;
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .benefitsCard > div > img {
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
+  }
+
+  .benefitsCard > :nth-child(2) > :nth-child(1) {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .benefitsCard > :nth-child(2) > :nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: -10px;
   }
 }
