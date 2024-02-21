@@ -6,11 +6,17 @@ import useStore from "./store";
 import Container from "./Components/common/Container";
 import Plans from "./Components/Plans";
 import Discount from "./Components/Discount";
-
+import Benefits from "./Components/Benefits";
 
 function App() {
-  const { setBenefits, setCreatorItem, setFaq, setSeriesItem, setUserItem, setPlans } =
-    useStore();
+  const {
+    setBenefits,
+    setCreatorItem,
+    setFaq,
+    setSeriesItem,
+    setUserItem,
+    setPlans,
+  } = useStore();
 
   // API call to fetch the data and store it in a global store using zustand
   const handleGetData = async () => {
@@ -24,8 +30,7 @@ function App() {
         setFaq(data.faq);
         setSeriesItem(data.series_item);
         setUserItem(data.user_item);
-        setPlans(data.plans)
-
+        setPlans(data.plans);
       }
     } catch (error) {
       console.log(error);
@@ -40,15 +45,10 @@ function App() {
     <div className="heroImage">
       <Container>
         <HeroSection />
-        <div>
-          <Plans />
-        </div>
-
-        <div>
-          <Discount />
-        </div>
+        <Plans />
+        <Discount />
+        <Benefits />
       </Container>
-      {/* <HeroSection /> */}
     </div>
   );
 }
