@@ -3,8 +3,28 @@ body {
   color: white;
 }
 
+/* Common CSS */
+#hideScroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+#hideScroll::-webkit-scrollbar-track {
+  background: transparent;
+  width: 50px;
+}
+
+#hideScroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+
+#hideScroll::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
 .container {
-  /* max-width: 1248px; */
+  /* min-width: 1248px; */
   margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
@@ -179,6 +199,33 @@ body {
   margin-top: -10px;
 }
 
+/* Series section */
+.seriesContainer {
+  padding-top: 10px;
+}
+
+.titleHeader {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.seriesImageContainer {
+  margin-top: 30px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}
+
+.seriesImage {
+  width: 133px;
+  height: 170px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
   /* Hero section CSS */
@@ -187,6 +234,10 @@ body {
   }
 
   /* Plan details CSS */
+  .plansContainer {
+    margin-top: 25px;
+  }
+
   .planCard {
     padding-top: 18px;
     padding-right: 15px;
@@ -324,6 +375,12 @@ body {
     margin: auto;
     margin-top: 40px;
   }
+
+  /* Series section */
+  .seriesContainer {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 /* Extra Large Devices (Large Desktops) */
@@ -335,7 +392,7 @@ body {
   }
 
   .heroImage {
-    height: 500px;
+    height: 600px;
   }
 
   .heroText {
@@ -488,5 +545,23 @@ body {
     font-weight: 400;
     font-size: 18px;
     margin-top: -10px;
+  }
+
+  /* Series section */
+  .seriesContainer {
+    margin-top: 1%;
+  }
+
+  .titleHeader {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .seriesImageContainer {
+    width: 45%;
+    overflow-x: auto !important;
+    margin: auto;
+    margin-top: 40px;
+    gap: 20px;
   }
 }
