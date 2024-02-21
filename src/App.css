@@ -75,6 +75,62 @@ body {
   font-size: 10px;
 }
 
+/* Discount section css */
+.discountCard {
+  background-color: #1c1c1c;
+  font-family: "Roboto", sans-serif;
+}
+
+.discountCard > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discountContainer > p {
+  color: rgb(155, 153, 153);
+}
+
+.discountCard > :nth-child(2) > :nth-child(1) {
+  color: rgb(155, 153, 153);
+}
+
+.discountCard > :nth-child(2) > :nth-child(2) {
+  color: #ff3d00;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.subscribe {
+  background-image: linear-gradient(to right, #0075ff, #ff00d6, #ffa800);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 20px;
+  margin-top: 40px;
+}
+
+.subscribe > :nth-child(1) {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.subscribe > :nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.arrowForward {
+  cursor: pointer;
+}
+
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
   /* Hero section CSS */
@@ -113,6 +169,42 @@ body {
   .specialPriceTag {
     top: -11px;
   }
+
+  /* Discount section */
+  .discountContainer {
+    margin-top: 30px;
+  }
+
+  .discountContainer > p {
+    font-size: 10px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+  }
+
+  .discountCard {
+    border-radius: 15px;
+    padding: 14px;
+  }
+
+  .discountCard > div > div > p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .discountCard > :nth-child(1) > p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .discountCard > :nth-child(2) > :nth-child(1) {
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .discountCard > :nth-child(2) > :nth-child(2) {
+    font-size: 10px;
+    font-weight: 400;
+  }
 }
 
 /* Medium Devices (Tablets) */
@@ -139,6 +231,42 @@ body {
 
   .specialPriceTag {
     top: -10px;
+  }
+
+  /* Discount section CSS */
+  .discountContainer {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  .discountContainer > p {
+    font-size: 16px;
+  }
+
+  .discountCard {
+    padding: 20px;
+  }
+
+  .discountCard > div > div > p {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .discountCard > :nth-child(2) > :nth-child(1) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .discountCard > :nth-child(2) > :nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .subscribe {
+    width: 55%;
+    margin: auto;
+    margin-top: 30px;
   }
 }
 
@@ -201,5 +329,69 @@ body {
   .specialPriceTag {
     font-size: 14px;
     top: -14px;
+  }
+
+  /* Discount section CSS */
+  .discountContainer {
+    width: 40%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 30px;
+  }
+
+  .discountContainer > p {
+    font-size: 18px;
+  }
+
+  .discountCard {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .discountCard > div > div > p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .discountCard > :nth-child(2) {
+    margin-top: 10px;
+  }
+
+  .discountCard > :nth-child(2) > :nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .discountCard > :nth-child(2) > :nth-child(2) {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .subscribe {
+    border-radius: 20px;
+    width: 36%;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+  }
+
+  .subscribe > :nth-child(1) {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .subscribe > :nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .arrowForward {
+    font-size: 24px;
   }
 }
