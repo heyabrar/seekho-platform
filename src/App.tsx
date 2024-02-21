@@ -3,6 +3,9 @@ import "./App.css";
 import HeroSection from "./Components/HeroSection";
 import getData from "./api";
 import useStore from "./store";
+import Container from "./Components/common/Container";
+import HeroBg from '../src/assets/heroBG.png'
+
 
 function App() {
   const { setBenefits, setCreatorItem, setFaq, setSeriesItem, setUserItem } =
@@ -31,8 +34,11 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <HeroSection />
+    <div className="heroImage">
+      {/* <img src={HeroBg} alt="HeroBG" className="heroBG" /> */}
+      <Container>
+        <HeroSection />
+      </Container>
     </div>
   );
 }

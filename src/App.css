@@ -1,24 +1,57 @@
+body {
+  background: black;
+}
+
+.container {
+  max-width: 1248px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: auto;
+  /* position: relative; */
+}
+
+.heroImage{
+  background-image: linear-gradient(to bottom, rgba(1, 1,1, 0.52), black), url('/src/assets/heroBG.png');
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+
+.heroMain{
+  display: flex;
+  gap: 10px;
+}
+
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
-  /* Styles for small screens */
-  body{
-    background:black;
-  }
+  /* .heroBG {
+    width: 100%;
+    border: 1px solid white;
+    opacity: 50%;
+    position: relative;
+  } */
+
+  /* .heroMain {
+    position: absolute;
+    top: 10%;
+    right: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  } */
+
+  
 }
 
 /* Medium Devices (Tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  /* Styles for medium screens */
-  body{
-    background:orange;
-  }
-}
 
+}
 
 /* Extra Large Devices (Large Desktops) */
 @media only screen and (min-width: 1200px) {
-  /* Styles for extra large screens */
-  body{
-    background:red;
-  }
+  
 }
