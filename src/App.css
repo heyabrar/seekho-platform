@@ -8,6 +8,7 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   margin: auto;
+  border: 1px solid red;
 }
 
 .heroImage {
