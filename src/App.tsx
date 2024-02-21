@@ -5,6 +5,7 @@ import getData from "./api";
 import useStore from "./store";
 import Container from "./Components/common/Container";
 import Plans from "./Components/Plans";
+import Discount from "./Components/Discount";
 
 
 function App() {
@@ -39,9 +40,12 @@ function App() {
     <div className="heroImage">
       <Container>
         <HeroSection />
-
         <div>
           <Plans />
+        </div>
+
+        <div>
+          <Discount />
         </div>
       </Container>
       {/* <HeroSection /> */}
