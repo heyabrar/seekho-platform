@@ -17,7 +17,7 @@ const useStore = create<IStore>((set) => ({
   plans: initialPlanData,
   seriesItem: { title: "", series_list: [] },
   userItem: { title: "", user_list: [] },
-  setPlans: (val: IPlan) => set({ plans: val }),
+  setPlans: (val: IPlan | any) => set({ plans: val }),
   setBenefits: (val: IBenefits) => set({ benefits: val }),
   setCreatorItem: (val: ICreatorItem) => set({ creatorItem: val }),
   setFaq: (val: IFaq) => set({ faq: val }),

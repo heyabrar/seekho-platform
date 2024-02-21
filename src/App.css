@@ -9,7 +9,6 @@ body {
   margin-left: auto;
   padding-right: 20px; 
   padding-left: 20px; 
-  border: 1px solid red;
 }
 
 .heroImage {
@@ -32,6 +31,19 @@ body {
 @media only screen and (max-width: 767px) {
   .heroText{
     font-size: 20px;
+  }
+
+  .planCard{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-right: 14px;
+    padding-bottom: 10px;
+    padding-left: 14px;
+    margin-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #292A2F;
   }
 }
 

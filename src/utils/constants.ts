@@ -1,6 +1,6 @@
 import { IPlan } from "../interfaces";
 
-const initialPlanData: IPlan | any = [
+const initialPlanData: IPlan[] | any = [
   {
     id: 0,
     title: "",

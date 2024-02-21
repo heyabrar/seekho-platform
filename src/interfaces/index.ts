@@ -82,7 +82,7 @@ interface IStore {
   benefits: IBenefits;
   creatorItem: ICreatorItem;
   faq: IFaq;
-  plans: IPlan;
+  plans: IPlan[];
   seriesItem: ISeriesItem;
   userItem: IUserItem;
   setBenefits: (val: IBenefits) => void;

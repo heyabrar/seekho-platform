@@ -4,11 +4,11 @@ import HeroSection from "./Components/HeroSection";
 import getData from "./api";
 import useStore from "./store";
 import Container from "./Components/common/Container";
-import HeroBg from '../src/assets/heroBG.png'
+import Plans from "./Components/Plans";
 
 
 function App() {
-  const { setBenefits, setCreatorItem, setFaq, setSeriesItem, setUserItem } =
+  const { setBenefits, setCreatorItem, setFaq, setSeriesItem, setUserItem, setPlans } =
     useStore();
 
   // API call to fetch the data and store it in a global store using zustand
@@ -23,6 +23,8 @@ function App() {
         setFaq(data.faq);
         setSeriesItem(data.series_item);
         setUserItem(data.user_item);
+        setPlans(data.plans)
+
       }
     } catch (error) {
       console.log(error);
@@ -37,6 +39,10 @@ function App() {
     <div className="heroImage">
       <Container>
         <HeroSection />
+
+        <div>
+          <Plans />
+        </div>
       </Container>
       {/* <HeroSection /> */}
     </div>
