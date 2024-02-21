@@ -35,10 +35,10 @@ function App() {
 
   return (
     <div className="heroImage">
-      {/* <Container>
+      <Container>
         <HeroSection />
-      </Container> */}
-      <HeroSection />
+      </Container>
+      {/* <HeroSection /> */}
     </div>
   );
 }

@@ -5,9 +5,10 @@ body {
 
 .container {
   max-width: 1248px;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px; 
+  padding-left: 20px; 
   border: 1px solid red;
 }
 
@@ -18,12 +19,13 @@ body {
   display: flex;
   justify-content: center;
   background-color: black;
+  width: 100%;
 }
 
 .heroMain {
   display: flex;
   gap: 10px;
-  width: 100%;
+  margin-top: 20%;
 }
 
 /* Small Devices (Phones) */
@@ -58,5 +60,10 @@ body {
 
   .heroText{
     font-size: 36px;
+  }
+
+  .container{
+    margin-right: auto;
+    margin-left: auto;
   }
 }
