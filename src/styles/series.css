@@ -1,0 +1,63 @@
+.seriesContainer {
+  padding-top: 10px;
+}
+
+.titleHeader {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-align: center !important;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.seriesImageContainer {
+  margin-top: 30px;
+  display: flex;
+  overflow-x: scroll;
+  gap: 15px;
+}
+
+.seriesImage {
+  width: 133px;
+  height: 170px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .seriesContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+  }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media only screen and (min-width: 1200px) {
+  .seriesContainer {
+    margin-top: 1%;
+  }
+
+  .titleHeader {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .seriesImageContainer {
+    width: 100%;
+    justify-content: space-evenly;
+    overflow-x: auto !important;
+    margin: auto;
+    margin-top: 40px;
+    gap: 10px;
+  }
+
+  .seriesImage {
+    width: 120px;
+    height: 150px;
+  }
+}

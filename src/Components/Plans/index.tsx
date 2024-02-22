@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import "../../styles/planDetails.css"
 import useStore from "../../store";
 import calculateDiscount from "../../utils/helperFunctions";
 
@@ -48,8 +49,8 @@ const Plans = () => {
                         {item.plan_type === "monthly"
                           ? "month"
                           : item.plan_type === "quarter"
-                          ? "quarter"
-                          : "year"}
+                            ? "quarter"
+                            : "year"}
                       </span>
                     </p>
                     <div
@@ -70,16 +71,15 @@ const Plans = () => {
                       <p
                         className="discountTag"
                         style={{
-                          display: `${
-                            item?.hide_discount_percentage ? "block" : "none"
-                          }`,
+                          display: `${item?.hide_discount_percentage ? "block" : "none"
+                            }`,
                         }}
                       >
                         {item.hide_discount_percentage
                           ? calculateDiscount(
-                              item.original_price,
-                              item.min_mandate_price
-                            )
+                            item.original_price,
+                            item.min_mandate_price
+                          )
                           : ""}
                       </p>
                     </div>

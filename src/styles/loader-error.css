@@ -33,7 +33,6 @@
   }
 }
 
-/* Hide loader when body has a class of 'loaded' */
 body.loaded .loader-overlay {
   display: none;
 }

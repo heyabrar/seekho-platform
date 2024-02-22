@@ -3,6 +3,8 @@ import "./App.css";
 import "./styles/loader-error.css";
 import "./styles/userSlider.css"
 import "./styles/faq.css"
+import "./styles/common.css"
+import "./styles/heroSection.css"
 import HeroSection from "./Components/HeroSection";
 import getData from "./api";
 import useStore from "./store";
