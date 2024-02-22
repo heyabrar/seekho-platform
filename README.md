@@ -15,3 +15,21 @@ The page is hosted in vercel.
 
 To check the deployments
 Open [Seekho Deployments](https://vercel.com/heyabrar/seekho-platform/deployments)
+
+## Tech Stack
+
+- **Typescript**
+- **HTML5**
+- **CSS**
+- **React**
+- **React Icons**
+- **axios**
+
+## Are of focus
+
+- **Functionality**
+- **Code Quality:**
+- **UI/UX Design**
+- **Error Handling**
+- **Loading Handling**
+- **Responsiveness**
