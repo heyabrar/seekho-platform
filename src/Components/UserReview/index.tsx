@@ -31,7 +31,7 @@ const UserReview = () => {
                 </div>
 
                 <div className="dots-container">
-                    {Array.from({ length: 3 }, (_, index) => (
+                    {Array.from({ length: userItem?.user_list?.length }, (_, index) => (
                         <div
                             key={index}
                             className={`dot ${index === currentSlide ? "active" : ""}`}
@@ -40,7 +40,7 @@ const UserReview = () => {
                     ))}
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
