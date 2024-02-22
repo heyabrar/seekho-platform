@@ -24,11 +24,16 @@ body {
 }
 
 .container {
-  /* min-width: 1248px; */
-  margin-right: auto;
+  /* max-width: 1200px; */
+  /* margin-right: auto;
   margin-left: auto;
   padding-right: 20px;
-  padding-left: 20px;
+  padding-left: 20px; */
+  max-width: 1400px; /* Set your desired maximum width */
+  margin: 0 auto; /* Center the container horizontally */
+  width: 90%; /* Take full width on smaller screens */
+  box-sizing: border-box;
+  border: 1px solid white;
 }
 
 /* Hero section CSS */
@@ -156,6 +161,7 @@ body {
   border: 1px solid gray;
   margin-top: 30px;
   border-radius: 15px;
+  padding-bottom: 20px;
 }
 
 .benefitsContainer > p {
@@ -208,8 +214,11 @@ body {
   font-size: 18px;
   font-weight: 500;
   font-family: "Roboto", sans-serif;
+  text-align: center !important;
+  width: fit-content;
+  margin: auto;
   margin-top: 20px;
-  text-align: center;
+  overflow: hidden;
 }
 
 .seriesImageContainer {
@@ -224,6 +233,45 @@ body {
   height: 170px;
   border-radius: 6px;
   cursor: pointer;
+}
+
+/* Top experts section */
+.expertsContainer {
+  margin-top: 10%;
+}
+
+.expertsContainer > div {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  margin-top: 7%;
+}
+
+.expertsCard {
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.expertsCard > img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.expertsCard > :nth-child(2) {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.expertsCard > :nth-child(3) {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: -10px;
+  color: gray;
 }
 
 /* Small Devices (Phones) */
@@ -378,8 +426,21 @@ body {
 
   /* Series section */
   .seriesContainer {
-    width: 80%;
+    width: 90%;
     margin: auto;
+    margin-top: 2%;
+  }
+
+  /* Top experts section */
+  .expertsContainer {
+    width: 90%;
+    margin: auto;
+    margin-top: 6%;
+  }
+
+  .expertsContainer > div {
+    margin-top: 4%;
+    /* justify-content: space-evenly; */
   }
 }
 
@@ -406,7 +467,7 @@ body {
 
   /* Plan details CSS */
   .plansContainer {
-    width: 40%;
+    width: 50%;
     margin: auto;
   }
 
@@ -446,7 +507,7 @@ body {
 
   /* Discount section CSS */
   .discountContainer {
-    width: 40%;
+    width: 50%;
     margin: auto;
     margin-top: 50px;
     border-radius: 30px;
@@ -485,12 +546,12 @@ body {
 
   .subscribe {
     border-radius: 20px;
-    width: 36%;
+    width: 43%;
     margin: auto;
-    margin-top: 40px;
-    padding-top: 10px;
+    margin-top: 5%;
+    padding-top: 20px;
     padding-right: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 40px;
   }
 
@@ -510,9 +571,10 @@ body {
 
   /* Benefits section CSS */
   .benefitsContainer {
-    width: 29%;
+    width: 40%;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 5%;
+    padding-bottom: 20px;
   }
 
   .benefitsContainer > p {
@@ -538,12 +600,12 @@ body {
 
   .benefitsCard > :nth-child(2) > :nth-child(1) {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .benefitsCard > :nth-child(2) > :nth-child(2) {
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 00;
+    font-size: 17px;
     margin-top: -10px;
   }
 
@@ -558,10 +620,46 @@ body {
   }
 
   .seriesImageContainer {
-    width: 45%;
+    width: 100%;
+    justify-content: space-evenly;
     overflow-x: auto !important;
     margin: auto;
     margin-top: 40px;
     gap: 20px;
+  }
+
+  /* Top experts section */
+  .expertsContainer {
+    width: 95%;
+    margin: auto;
+    margin-top: 3%;
+  }
+
+  .expertsContainer > div {
+    margin-top: 3%;
+    justify-content: space-evenly;
+  }
+
+  .expertsCard {
+    min-width: 200px;
+    /* margin-top: 5px; */
+  }
+
+  .expertsCard > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .expertsCard > :nth-child(2) {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .expertsCard > :nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: -10px;
+    color: gray;
   }
 }
