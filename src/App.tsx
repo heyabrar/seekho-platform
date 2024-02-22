@@ -16,6 +16,7 @@ import Error from "./Components/common/Error";
 import Experts from "./Components/Experts";
 import UserReview from "./Components/UserReview";
 import Faq from "./Components/FAQ";
+import Contact from "./Components/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -87,6 +88,7 @@ function App() {
 
           <Container>
             <Faq />
+            <Contact />
           </Container>
         </div>
       )}
