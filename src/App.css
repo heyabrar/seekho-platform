@@ -28,7 +28,8 @@ body {
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  padding-bottom: 40px;
 }
 
 /* Hero section CSS */
