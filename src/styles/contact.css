@@ -1,5 +1,7 @@
 .contact-container {
   margin-top: 30px;
+  padding-bottom: 20px;
+
 }
 
 .contact-container > :nth-child(1) {
@@ -14,6 +16,7 @@
   padding: 10px;
   height: 120px;
   border-radius: 10px;
+  border: 1px solid gray;
 }
 
 .text-area:focus {
@@ -33,6 +36,7 @@
   padding: 10px 10px 10px 19px;
   border-radius: 10px;
   cursor: pointer;
+  border: none;
 }
 
 .email {
@@ -91,5 +95,6 @@
     width: 42%;
     margin: auto;
     margin-top: 10px;
+
   }
 }

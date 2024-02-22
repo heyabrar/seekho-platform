@@ -1,5 +1,6 @@
 import useStore from "../../store";
 import TitleHeader from "../common/TitleHeader";
+import "../../styles/topExperts.css"
 
 const Experts = () => {
     const { creatorItem } = useStore();

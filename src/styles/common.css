@@ -1,0 +1,48 @@
+/* Common CSS */
+#hideScroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+#hideScroll::-webkit-scrollbar-track {
+  background: transparent;
+  width: 50px;
+}
+
+#hideScroll::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 5px;
+}
+
+#hideScroll::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Small Devices (Mobiles) */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
