@@ -25,7 +25,7 @@ Open [Seekho Deployments](https://vercel.com/heyabrar/seekho-platform/deployment
 - **React Icons**
 - **axios**
 
-## Are of focus
+## Areas of focus
 
 - **Functionality**
 - **Code Quality:**
