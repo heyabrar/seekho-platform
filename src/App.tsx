@@ -11,6 +11,7 @@ import Benefits from "./Components/Benefits";
 import Series from "./Components/Series";
 import Loader from "./Components/common/Loader";
 import Error from "./Components/common/Error";
+import Experts from "./Components/Experts";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -71,6 +72,7 @@ function App() {
             <Discount />
             <Benefits />
             <Series />
+            <Experts />
           </Container>
         </div>
       )}
