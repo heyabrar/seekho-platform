@@ -24,14 +24,9 @@ body {
 }
 
 .container {
-  /* max-width: 1200px; */
-  /* margin-right: auto;
-  margin-left: auto;
-  padding-right: 20px;
-  padding-left: 20px; */
-  max-width: 1400px; /* Set your desired maximum width */
-  margin: 0 auto; /* Center the container horizontally */
-  width: 90%; /* Take full width on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
   box-sizing: border-box;
   border: 1px solid white;
 }
@@ -41,8 +36,6 @@ body {
   background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.52), black),
     url("/src/assets/heroBG.png");
   height: 300px;
-  /* display: flex;
-  justify-content: center; */
   background-color: black;
   width: 100%;
 }
@@ -75,11 +68,12 @@ body {
 .discountTag {
   background: #3980ff;
   color: white;
-  padding-top: 1px;
-  padding-right: 10px;
-  padding-bottom: 1px;
-  padding-left: 11px;
+  padding-top: 3px;
+  padding-right: 8px;
+  padding-bottom: 3px;
+  padding-left: 8px;
   border-radius: 10px;
+  font-size: 10px;
 }
 
 .radioButton {
@@ -276,6 +270,10 @@ body {
 
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+
   /* Hero section CSS */
   .heroText {
     font-size: 20px;
@@ -356,6 +354,12 @@ body {
 
 /* Medium Devices (Tablets) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+  .container {
+    width: 90%;
+  }
+
+
   /* Hero section CSS */
   .heroSVG {
     width: 140px;
@@ -479,29 +483,34 @@ body {
   }
 
   .planCard > div > div > p > :nth-child(1) {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
   }
 
   .planCard > div > div > p > :nth-child(2) {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 400;
   }
 
   .planCard > div > div > :nth-child(2) {
     margin-top: "-10px";
     color: #7d7d7d;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 400;
+  }
+
+  .radioButton {
+    width: 12px;
+    height: 12px;
   }
 
   .planCard > :nth-child(2) {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .specialPriceTag {
-    font-size: 14px;
+    font-size: 12px;
     top: -14px;
   }
 
@@ -535,12 +544,12 @@ body {
   }
 
   .discountCard > :nth-child(2) > :nth-child(1) {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
   }
 
   .discountCard > :nth-child(2) > :nth-child(2) {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
   }
 
@@ -605,7 +614,7 @@ body {
 
   .benefitsCard > :nth-child(2) > :nth-child(2) {
     font-weight: 00;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: -10px;
   }
 
@@ -625,12 +634,17 @@ body {
     overflow-x: auto !important;
     margin: auto;
     margin-top: 40px;
-    gap: 20px;
+    gap: 10px;
+  }
+
+  .seriesImage {
+    width: 120px;
+    height: 150px;
   }
 
   /* Top experts section */
   .expertsContainer {
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 3%;
   }
@@ -641,25 +655,23 @@ body {
   }
 
   .expertsCard {
-    min-width: 200px;
-    /* margin-top: 5px; */
+    min-width: 100px;
   }
 
   .expertsCard > img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
   }
 
   .expertsCard > :nth-child(2) {
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
   }
 
   .expertsCard > :nth-child(3) {
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: -10px;
-    color: gray;
+    font-size: 13px;
+    text-align: center;
   }
 }
