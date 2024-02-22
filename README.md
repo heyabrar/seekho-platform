@@ -1,4 +1,4 @@
-# Seekho
+# Seekho, Netflix like platform for edutainment
 
 This project was bootstrapped with React App.
 
