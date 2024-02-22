@@ -1,4 +1,5 @@
 import { FaArrowRight } from "react-icons/fa";
+import "../../styles/discount.css"
 import Puzzle from "../Icons/Puzzel";
 const Discount = () => {
     return (

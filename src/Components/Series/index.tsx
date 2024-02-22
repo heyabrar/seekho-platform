@@ -1,5 +1,6 @@
 import useStore from "../../store";
 import TitleHeader from "../common/TitleHeader";
+import "../../styles/series.css"
 
 const Series = () => {
   const { seriesItem } = useStore();

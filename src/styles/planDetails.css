@@ -1,0 +1,141 @@
+.planCard {
+  position: relative;
+  background-color: #292a2f;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", sans-serif;
+  margin-top: 10px;
+  border-radius: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.discountTag {
+  background: #3980ff;
+  color: white;
+  padding-top: 3px;
+  padding-right: 8px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.radioButton {
+  width: 20px;
+  height: 20px;
+}
+
+.specialPriceTag {
+  position: absolute;
+  background-image: linear-gradient(to right, #0075ff, #ff00d6, #ffa800);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 11px;
+  padding-top: 1px;
+  padding-right: 10px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  right: 0;
+  font-size: 10px;
+}
+
+/* Small Devices (Phones) */
+@media only screen and (max-width: 767px) {
+  .plansContainer {
+    margin-top: 25px;
+  }
+
+  .planCard {
+    padding-top: 18px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+
+  .planCard > div > div > p > :nth-child(1) {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .planCard > div > div > p > :nth-child(2) {
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  .planCard > div > div > :nth-child(2) {
+    font-size: 11px;
+    margin-top: -5px;
+  }
+
+  .radioButton {
+    width: 15px;
+    height: 15px;
+  }
+
+  .specialPriceTag {
+    top: -11px;
+  }
+}
+
+/* Medium Devices (Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .plansContainer {
+    width: 60%;
+    margin: auto;
+  }
+
+  .planCard {
+    padding: 15px;
+  }
+
+  .specialPriceTag {
+    top: -10px;
+  }
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media only screen and (min-width: 1200px) {
+  .plansContainer {
+    width: 50%;
+    margin: auto;
+  }
+
+  .planCard {
+    padding-top: 18px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+
+  .planCard > div > div > p > :nth-child(1) {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .planCard > div > div > p > :nth-child(2) {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .planCard > div > div > :nth-child(2) {
+    margin-top: "-10px";
+    color: #7d7d7d;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .radioButton {
+    width: 12px;
+    height: 12px;
+  }
+
+  .planCard > :nth-child(2) {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .specialPriceTag {
+    font-size: 12px;
+    top: -14px;
+  }
+}

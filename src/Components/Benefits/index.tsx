@@ -1,4 +1,5 @@
 import useStore from "../../store";
+import "../../styles/benefits.css"
 
 const Benefits = () => {
   const { benefits } = useStore();
