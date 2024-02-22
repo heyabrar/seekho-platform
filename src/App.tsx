@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import "./styles/loader-error.css";
 import "./styles/userSlider.css"
+import "./styles/faq.css"
 import HeroSection from "./Components/HeroSection";
 import getData from "./api";
 import useStore from "./store";
@@ -14,6 +15,7 @@ import Loader from "./Components/common/Loader";
 import Error from "./Components/common/Error";
 import Experts from "./Components/Experts";
 import UserReview from "./Components/UserReview";
+import Faq from "./Components/FAQ";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -82,6 +84,10 @@ function App() {
               <UserReview />
             </Container>
           </div>
+
+          <Container>
+            <Faq />
+          </Container>
         </div>
       )}
     </div>
