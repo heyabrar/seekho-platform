@@ -1,0 +1,95 @@
+.contact-container {
+  margin-top: 30px;
+}
+
+.contact-container > :nth-child(1) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-area {
+  background-color: #1f1f1f;
+  color: white;
+  width: 95%;
+  padding: 10px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+.send-cta {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #1fbe2b;
+  color: white;
+  padding: 10px 10px 10px 19px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.email {
+  text-align: center;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .contact-container {
+    margin-top: 30px;
+  }
+
+  .contact-container > p {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .text-area {
+    background-color: #1f1f1f;
+    color: white;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    height: 120px;
+  }
+
+  .send-cta {
+    width: 53%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-container {
+    margin-top: 30px;
+  }
+
+  .contact-container > :nth-child(1) {
+    font-size: 32px;
+    text-align: center;
+    font-weight: 700;
+  }
+
+  .text-area {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    height: 120px;
+  }
+
+  .send-cta {
+    width: 42%;
+    margin: auto;
+    margin-top: 10px;
+  }
+}

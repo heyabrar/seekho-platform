@@ -3,7 +3,15 @@ type Props = {
 };
 
 const TitleHeader = ({ title }: Props) => {
-  return <div className="titleHeader">{title}</div>;
+  return (
+    <div
+      className="titleHeader"
+      style={{ textAlign: "center" }}
+      id="hideScroll"
+    >
+      {title}
+    </div>
+  );
 };
 
 export default TitleHeader;

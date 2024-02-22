@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import "./styles/loader-error.css";
+import "./styles/userSlider.css"
+import "./styles/faq.css"
 import HeroSection from "./Components/HeroSection";
 import getData from "./api";
 import useStore from "./store";
@@ -11,6 +13,10 @@ import Benefits from "./Components/Benefits";
 import Series from "./Components/Series";
 import Loader from "./Components/common/Loader";
 import Error from "./Components/common/Error";
+import Experts from "./Components/Experts";
+import UserReview from "./Components/UserReview";
+import Faq from "./Components/FAQ";
+import Contact from "./Components/Contact";
 
 function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -71,6 +77,18 @@ function App() {
             <Discount />
             <Benefits />
             <Series />
+            <Experts />
+          </Container>
+
+          <div style={{ backgroundColor: '#1F1F1F' }}>
+            <Container>
+              <UserReview />
+            </Container>
+          </div>
+
+          <Container>
+            <Faq />
+            <Contact />
           </Container>
         </div>
       )}
