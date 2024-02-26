@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import "../../styles/planDetails.css";
 import useStore from "../../store";
-import calculateDiscount from "../../utils/helperFunctions";
 import { ISelectPlan } from "../../interfaces";
+import { calculateDiscount, handleFormatPlanType } from "../../utils/helperFunctions";
 
 const Plans = () => {
   const [choosePlan, setChoosePlan] = useState<string>("");
@@ -73,11 +73,7 @@ const Plans = () => {
                     <p style={{ color: "#FFCC11" }}>
                       <span>₹{item.min_mandate_price}</span> /{" "}
                       <span>
-                        {item.plan_type === "monthly"
-                          ? "month"
-                          : item.plan_type === "quarter"
-                            ? "quarter"
-                            : "year"}
+                        {handleFormatPlanType({ planType: item.plan_type })}
                       </span>
                     </p>
                     <div
