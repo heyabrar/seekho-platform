@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 40px;
+  z-index: 90;
 }
 
 .slider-items {

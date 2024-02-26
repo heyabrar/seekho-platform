@@ -78,6 +78,11 @@ interface IUserItem {
   }[];
 }
 
+interface ISelectPlan {
+  amount: number;
+  type: string;
+}
+
 interface IStore {
   benefits: IBenefits;
   creatorItem: ICreatorItem;
@@ -85,12 +90,14 @@ interface IStore {
   plans: IPlan[];
   seriesItem: ISeriesItem;
   userItem: IUserItem;
+  selectPlan: ISelectPlan;
   setBenefits: (val: IBenefits) => void;
   setCreatorItem: (val: ICreatorItem) => void;
   setFaq: (val: IFaq) => void;
   setPlans: (val: IPlan) => void;
   setSeriesItem: (val: ISeriesItem) => void;
   setUserItem: (val: IUserItem) => void;
+  setSelectPlan: (val: ISelectPlan) => void;
 }
 
 export type {
@@ -101,4 +108,5 @@ export type {
   IPlan,
   ISeriesItem,
   IUserItem,
+  ISelectPlan
 };
