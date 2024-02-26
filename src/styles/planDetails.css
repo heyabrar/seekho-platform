@@ -5,9 +5,10 @@
   justify-content: space-between;
   font-family: "Inter", sans-serif;
   margin-top: 10px;
-  border-radius: 10px;
   align-items: center;
   cursor: pointer;
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .discountTag {
@@ -46,7 +47,7 @@
   }
 
   .planCard {
-    padding-top: 18px;
+    padding-top: 10px;
     padding-right: 15px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -101,9 +102,9 @@
   }
 
   .planCard {
-    padding-top: 18px;
+    padding-top: 15px;
     padding-right: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     padding-left: 25px;
   }
 
