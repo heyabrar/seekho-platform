@@ -55,6 +55,11 @@
 
 /* Small Devices (Phones) */
 @media only screen and (max-width: 767px) {
+  .subscribe{
+    position: sticky;
+    top: 0;
+  }
+
   .discountContainer {
     margin-top: 30px;
   }
