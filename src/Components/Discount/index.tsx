@@ -2,6 +2,7 @@ import { FaArrowRight } from "react-icons/fa";
 import "../../styles/discount.css";
 import Puzzle from "../Icons/Puzzel";
 import useStore from "../../store";
+import { handleFormatPlanType } from "../../utils/helperFunctions";
 
 const Discount = () => {
     const { selectPlan } = useStore();
@@ -38,7 +39,7 @@ const Discount = () => {
                         <p>
                             ₹{selectPlan.amount}
                             <span style={{ fontSize: "14px", fontWeight: 500 }}>
-                                /{selectPlan.type}
+                                /{handleFormatPlanType({ planType: selectPlan?.type })}
                             </span>
                         </p>
                         <p>Subscribe karein</p>

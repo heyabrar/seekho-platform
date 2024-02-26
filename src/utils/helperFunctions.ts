@@ -12,4 +12,17 @@ const calculateDiscount = (
   return `${roundedDiscount}% OFF`;
 };
 
-export default calculateDiscount;
+const handleFormatPlanType = ({ planType }: { planType: string }) => {
+  switch (planType) {
+    case "monthly":
+      return "month";
+    case "yearly":
+      return "year";
+    case "quarterly":
+      return "quarter";
+    default:
+      return "";
+  }
+};
+
+export { calculateDiscount, handleFormatPlanType };
