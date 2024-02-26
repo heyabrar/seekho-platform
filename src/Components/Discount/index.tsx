@@ -1,8 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 import "../../styles/discount.css";
 import Puzzle from "../Icons/Puzzel";
+import useStore from "../../store";
 
 const Discount = () => {
+    const { selectPlan } = useStore();
     return (
         <>
             <div className="discountContainer">
@@ -30,14 +32,20 @@ const Discount = () => {
                 </div>
             </div>
 
-            <div className="subscribe">
-                <p>
-                    ₹249
-                    <span style={{ fontSize: "14px", fontWeight: 500 }}>/quarter</span>
-                </p>
-                <p>Subscribe karein</p>
-                <FaArrowRight className="arrowForward" />
-            </div>
+            {selectPlan?.type?.length ? (
+                <div className="subscribe-container">
+                    <div className="subscribe">
+                        <p>
+                            ₹{selectPlan.amount}
+                            <span style={{ fontSize: "14px", fontWeight: 500 }}>
+                                /{selectPlan.type}
+                            </span>
+                        </p>
+                        <p>Subscribe karein</p>
+                        <FaArrowRight className="arrowForward" />
+                    </div>
+                </div>
+            ) : null}
         </>
     );
 };

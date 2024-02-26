@@ -1,15 +1,27 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import "../../styles/planDetails.css";
 import useStore from "../../store";
 import calculateDiscount from "../../utils/helperFunctions";
+import { ISelectPlan } from "../../interfaces";
 
 const Plans = () => {
   const [choosePlan, setChoosePlan] = useState<string>("");
-  const { plans } = useStore();
+  const { plans, setSelectPlan } = useStore();
 
   const planMemo = useMemo(() => {
     return plans;
   }, [plans]);
+
+  const handleSetSelectedPlans = ({ amount, type }: ISelectPlan) => {
+    setSelectPlan({ amount, type });
+  };
+
+  useEffect(() => {
+    const firstPlanAmount = plans[0]?.min_mandate_price;
+    const firstPlanType = plans[0]?.plan_type;
+    setChoosePlan(firstPlanType);
+    handleSetSelectedPlans({ amount: firstPlanAmount, type: firstPlanType });
+  }, []);
 
   return (
     <div>
@@ -20,7 +32,13 @@ const Plans = () => {
               <div
                 className="planCard"
                 key={item.id}
-                onClick={() => setChoosePlan(item.plan_type)}
+                onClick={() => {
+                  setChoosePlan(item.plan_type);
+                  handleSetSelectedPlans({
+                    amount: item?.min_mandate_price,
+                    type: item?.plan_type,
+                  });
+                }}
                 style={{
                   border:
                     item.plan_type === choosePlan
@@ -42,7 +60,13 @@ const Plans = () => {
                   <input
                     type="radio"
                     className="radioButton"
-                    onChange={() => setChoosePlan(item.plan_type)}
+                    onChange={() => {
+                      setChoosePlan(item.plan_type);
+                      handleSetSelectedPlans({
+                        amount: item?.min_mandate_price,
+                        type: item?.plan_type,
+                      });
+                    }}
                     checked={item.plan_type === choosePlan}
                   />
                   <div>
@@ -52,8 +76,8 @@ const Plans = () => {
                         {item.plan_type === "monthly"
                           ? "month"
                           : item.plan_type === "quarter"
-                          ? "quarter"
-                          : "year"}
+                            ? "quarter"
+                            : "year"}
                       </span>
                     </p>
                     <div
@@ -74,16 +98,15 @@ const Plans = () => {
                       <p
                         className="discountTag"
                         style={{
-                          display: `${
-                            item?.hide_discount_percentage ? "block" : "none"
-                          }`,
+                          display: `${item?.hide_discount_percentage ? "block" : "none"
+                            }`,
                         }}
                       >
                         {item.hide_discount_percentage
                           ? calculateDiscount(
-                              item.original_price,
-                              item.min_mandate_price
-                            )
+                            item.original_price,
+                            item.min_mandate_price
+                          )
                           : ""}
                       </p>
                     </div>
