@@ -9,7 +9,7 @@ const Faq = () => {
       <p>{faq?.title}</p>
       <div>
         {faq?.faq_list?.map((item) => {
-          return <FaqItem question={item.question} answer={item.answer} />;
+          return <FaqItem question={item.question} answer={item.answer} key={item.question}/>;
         })}
       </div>
     </div>
