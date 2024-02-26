@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import "../../styles/planDetails.css"
+import "../../styles/planDetails.css";
 import useStore from "../../store";
 import calculateDiscount from "../../utils/helperFunctions";
 
@@ -11,7 +11,6 @@ const Plans = () => {
     return plans;
   }, [plans]);
 
-  console.log({ plans });
   return (
     <div>
       {planMemo[0]?.title ? (
@@ -23,10 +22,14 @@ const Plans = () => {
                 key={item.id}
                 onClick={() => setChoosePlan(item.plan_type)}
                 style={{
-                  border: `1px solid transparent`,
-                  borderImage:
+                  border:
                     item.plan_type === choosePlan
-                      ? "linear-gradient(to right, #0075FF, #FF00D6, #FFA800) 3"
+                      ? "1px solid transparent"
+                      : "none",
+                  borderRadius: "10px",
+                  backgroundImage:
+                    item?.plan_type === choosePlan
+                      ? " linear-gradient(#292a2f, #292a2f), radial-gradient(circle at top left, #0075FF,#FF00D6,#FFA800)"
                       : "none",
                 }}
               >
@@ -49,8 +52,8 @@ const Plans = () => {
                         {item.plan_type === "monthly"
                           ? "month"
                           : item.plan_type === "quarter"
-                            ? "quarter"
-                            : "year"}
+                          ? "quarter"
+                          : "year"}
                       </span>
                     </p>
                     <div
@@ -71,15 +74,16 @@ const Plans = () => {
                       <p
                         className="discountTag"
                         style={{
-                          display: `${item?.hide_discount_percentage ? "block" : "none"
-                            }`,
+                          display: `${
+                            item?.hide_discount_percentage ? "block" : "none"
+                          }`,
                         }}
                       >
                         {item.hide_discount_percentage
                           ? calculateDiscount(
-                            item.original_price,
-                            item.min_mandate_price
-                          )
+                              item.original_price,
+                              item.min_mandate_price
+                            )
                           : ""}
                       </p>
                     </div>
